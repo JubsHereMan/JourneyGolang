@@ -9,23 +9,10 @@ import (
 
 
 
-func RunicPassage(ch1 chan string) {
-	count := 10
-	for i := 0; i < count; i++ {
-		delay := time.Duration((i + 1) * 100) * time.Millisecond
-		<-time.After(delay)
-		fmt.Println("runic passage:", delay)
-		ch1 <- "SAVED"
-	}
-}
-
-
-
-
 
 
 func MaterialPassage(ch2 chan string) {
-	count := 1000000
+	count := 1000000000000
 	for i := 0; i < count; i++ {
 		delay := time.Duration((i + 1) * 100) * time.Millisecond
 		<-time.After(delay)
