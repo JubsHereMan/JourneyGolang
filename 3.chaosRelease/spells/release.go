@@ -6,11 +6,6 @@ import (
 )
 
 
-
-
-
-
-
 func MaterialPassage(ch2 chan string) {
 	count := 1000000000000
 	for i := 0; i < count; i++ {
