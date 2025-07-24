@@ -19,7 +19,7 @@ func MageHandler(w http.ResponseWriter, r *http.Request){
 			selected = append(selected, m)
 		}
 	}
-	err := json.NewEncoder(w).Encode(mage)
+	err := json.NewEncoder(w).Encode(selected)
 	if err != nil{
 		http.Error(w,"error", http.StatusInternalServerError)
 	}
